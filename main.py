@@ -19,11 +19,13 @@ def decrypt(message):
 def get_message():
     message = input("")
     if message[0:7] == "encrypt":
-        print(f"encrypted message: {encrypt(message[7:])}")
+        print(f"Encrypted message: {encrypt(message[7:])}\n")
     elif message[0:7] == "decrypt":
-        print(f"encrypted message: {decrypt(message[7:])}")
+        print(f"Decrypted message: {decrypt(message[7:])}\n")
     else:
-        print("Invalid command")
+        print("Invalid command\n")
 
+    print("New command:\n")
+    get_message()
 
 get_message()
